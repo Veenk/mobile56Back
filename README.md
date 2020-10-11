@@ -1,3 +1,3 @@
 # mobile56Back
-back end for vtb
+back-end для ВТБ Хакатон
 необходимо настраивать nginx
