@@ -12,4 +12,4 @@ class vtbReq:
                              data=self.payload)
 
     def getResponse(self):
-        return requests.get(self.link, headers=self.headers,)
+        return requests.get(self.link, headers=self.headers)
