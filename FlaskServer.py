@@ -34,7 +34,7 @@ def sapnuPuas():
     if vtbRes.status_code == 200:
         prob_this_car = max(vtbRes.json()["probabilities"].items(), key=operator.itemgetter(1))[0]
         model = askFromMP(prob_this_car)
-        return json.dumps(model) if vtbRes.json()["probabilities"][prob_this_car] > 0.1 else json.dumps([])
+        return json.dumps(model) if vtbRes.json()["probabilities"][prob_this_car] > 0.3 else json.dumps([])
     else:
         return json.dumps({"status": vtbRes.status_code})
 
